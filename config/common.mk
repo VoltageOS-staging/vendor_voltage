@@ -201,7 +201,10 @@ include vendor/voltage/config/version.mk
 include vendor/voltage/config/bootanimation.mk
 
 # Fonts
-#$(call inherit-product, vendor/voltage/fonts/fonts.mk)
+$(call inherit-product, vendor/voltage/fonts/fonts.mk)
+
+# Inherit SystemUI Clocks if they exist
+$(call inherit-product-if-exists, vendor/SystemUIClocks/product.mk)
 
 # Audio
 $(call inherit-product, vendor/voltage/audio/audio.mk)
