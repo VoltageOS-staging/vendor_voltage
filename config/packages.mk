@@ -5,16 +5,15 @@ PRODUCT_PACKAGES += \
     Eleven \
     Etar \
     ThemePicker \
+    OmniJaws \
     ThemesStub
 
 # VoltageOS packages
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     # GameSpace \
-    # OmniJaws \
     # ParallelSpace \
     # SetupWizard \
     # Seedvault \
-    # WeatherIcons \
 
 #ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
 #    PRODUCT_PACKAGES += \
