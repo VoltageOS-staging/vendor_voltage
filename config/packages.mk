@@ -5,11 +5,11 @@ PRODUCT_PACKAGES += \
     Etar \
     ThemePicker \
     ThemesStub \
-    GameSpace \
-    OmniJaws \
-    WeatherIcons \
-    SetupWizard \
-    Seedvault \
+    #GameSpace \
+    #OmniJaws \
+    #WeatherIcons \
+    #SetupWizard \
+    #Seedvault \
 
 # VoltageOS packages
 #PRODUCT_PACKAGES += \
