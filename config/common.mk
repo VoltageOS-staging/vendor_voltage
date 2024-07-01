@@ -163,6 +163,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/voltage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/voltage/overlay/common
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig \
+    SimpleSettingsConfig
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \

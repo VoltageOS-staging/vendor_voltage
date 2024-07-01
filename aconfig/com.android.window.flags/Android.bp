@@ -1,0 +1,7 @@
+aconfig_values {
+    name: "aconfig-values-ap2a-com.android.window.flags-all",
+    package: "com.android.window",
+    srcs: [
+        "*.textproto",
+    ],
+}

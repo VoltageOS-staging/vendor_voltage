@@ -1,0 +1,20 @@
+flag_value {
+  package: "com.android.window.flags"
+  name: "app_compat_properties_api"
+  state: ENABLED
+  permission: READ_ONLY
+}
+
+flag_value {
+  package: "com.android.window.flags"
+  name: "user_min_aspect_ratio_app_default"
+  state: ENABLED
+  permission: READ_ONLY
+}
+
+flag_value {
+  package: "allow_hide_scm_button"
+  name: "new_volume_panel"
+  state: ENABLED
+  permission: READ_ONLY
+}
