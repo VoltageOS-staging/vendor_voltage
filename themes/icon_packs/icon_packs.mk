@@ -1,5 +1,5 @@
 PRODUCT_PACKAGES += \
-    IconPackCircularAndroidOverlay \
+IconPackCircularAndroidOverlay \
     IconPackCircularLauncherOverlay \
     IconPackCircularSettingsOverlay \
     IconPackCircularSystemUIOverlay \
