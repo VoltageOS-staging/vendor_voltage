@@ -11,7 +11,12 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig \
     Datura \
     GameSpace \
-    FaceUnlock
+    FaceUnlock \
+    Seedvault \
+    Glimpse \
+    Jellyfish \
+    Etar \
+    ExactCalculator \
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
