@@ -17,6 +17,8 @@ PRODUCT_PACKAGES += \
     Jellyfish \
     Etar \
     ExactCalculator \
+    LMOFreeform \
+    LMOFreeformSidebar \
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
