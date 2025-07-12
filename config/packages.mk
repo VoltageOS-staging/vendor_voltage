@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LMOFreeform \
     LMOFreeformSidebar \
+    OmniJaws
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
