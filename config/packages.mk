@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
     FaceUnlock \
     Seedvault \
     Glimpse \
+    Gramophone \
     Jellyfish \
     Etar \
     ExactCalculator \
