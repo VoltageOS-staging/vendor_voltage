@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Copyright (C) 2021 The Proton AOSP Project
+    Copyright (C) 2022 VoltageOS
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -15,8 +15,8 @@
     limitations under the License.
 -->
 <resources>
-    <string name="config_bodyFontFamily" translatable="false">oppo-sans</string>
-    <string name="config_bodyFontFamilyMedium" translatable="false">oppo-sans-medium</string>
-    <string name="config_headlineFontFamily" translatable="false">oppo-sans</string>
-    <string name="config_headlineFontFamilyMedium" translatable="false">oppo-sans-medium</string>
+    <string name="config_bodyFontFamily" translatable="false">opposans</string>
+    <string name="config_bodyFontFamilyMedium" translatable="false">opposans-medium</string>
+    <string name="config_headlineFontFamily" translatable="false">opposans</string>
+    <string name="config_headlineFontFamilyMedium" translatable="false">opposans-medium</string>
 </resources>
