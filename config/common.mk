@@ -233,12 +233,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_COPY_FILES += \
     vendor/voltage/prebuilt/common/bin/wipe-frp.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/wipe-frp
 
-# Themes
+# Black theme
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
-    AndroidVividTheme \
-    AndroidSnowPaintDropTheme \
-    AndroidEspressoTheme
+    BlackThemeSystemUI
 
 # RRO overlays
 PRODUCT_PACKAGES += \
