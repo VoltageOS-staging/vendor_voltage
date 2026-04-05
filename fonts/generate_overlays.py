@@ -94,6 +94,7 @@ CONFIG_XML_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <string name="config_bodyFontFamily" translatable="false">{font_name}</string>
     <string name="config_bodyFontFamilyMedium" translatable="false">{font_name}-medium</string>
+    <string name="config_clockFontFamily" translatable="false">@string/config_headlineFontFamily</string>
     <string name="config_headlineFontFamily" translatable="false">{font_name}</string>
     <string name="config_headlineFontFamilyMedium" translatable="false">{font_name}-medium</string>
 </resources>

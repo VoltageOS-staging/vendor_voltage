@@ -14,6 +14,7 @@
 <resources>
     <string name="config_bodyFontFamily" translatable="false">fucek</string>
     <string name="config_bodyFontFamilyMedium" translatable="false">fucek-semi-bold</string>
+    <string name="config_clockFontFamily" translatable="false">@string/config_headlineFontFamily</string>
     <string name="config_headlineFontFamily" translatable="false">fucek</string>
     <string name="config_headlineFontFamilyMedium" translatable="false">fucek-bold</string>
 </resources>
