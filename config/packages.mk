@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     LMOFreeformSidebar \
     OmniJaws \
     AppCompatConfig \
+    AxPcMode \
     VoltageJump
 
 ifeq ($(VOLTAGE_BUILD_TYPE),OFFICIAL)
