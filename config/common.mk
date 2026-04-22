@@ -86,10 +86,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=0
 endif
 
+# Pixel features and C2S
 PRODUCT_COPY_FILES += \
     vendor/voltage/prebuilt/common/etc/sysconfig/pixel_features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_features.xml \
     vendor/voltage/prebuilt/common/etc/sysconfig/contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/contextual_search.xml \
-    vendor/voltage/prebuilt/common/etc/sysconfig/nga.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nga.xml \
+    vendor/voltage/prebuilt/common/etc/sysconfig/nga.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nga.xml
 
 # Copy all VOLTAGE-specific init rc files
 $(foreach f,$(wildcard vendor/voltage/prebuilt/common/etc/init/*.rc),\
@@ -259,12 +260,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     framework_compatibility_matrix.lineage.xml
 
-# Torch strength
-TORCH_STR_SUPPORTED ?= false
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.torch_str_support=$(TORCH_STR_SUPPORTED)
-
 # Fonts
 $(call inherit-product, vendor/voltage/fonts/fonts.mk)
 
@@ -278,9 +273,6 @@ $(call inherit-product, vendor/voltage/audio/audio.mk)
 PRODUCT_PACKAGES += \
     custom_charger_animation \
     custom_charger_animation_vendor
-
-# Game Props
-TARGET_PRODUCT_PROP += vendor/voltage/config/gameprops/product.prop
 
 # Include extra packages
 include vendor/voltage/config/packages.mk
