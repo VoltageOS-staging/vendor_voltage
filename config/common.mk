@@ -1,6 +1,3 @@
-# Allow vendor/extra to override any property by setting it first
-$(call inherit-product-if-exists, vendor/extra/product.mk)
-
 PRODUCT_BRAND ?= VoltageOS
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -28,12 +25,6 @@ endif
 
 # Allow vendor prebuilt repos to exclude themselves from bp scanning
 -include $(sort $(wildcard vendor/*/*/exclude-bp.mk))
-
-# AOSP recovery flashing
-ifeq ($(TARGET_USES_AOSP_RECOVERY),true)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.sys.recovery_update=true
-endif
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
@@ -120,14 +111,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     voltage-component-overrides.xml
 
-# DesktopMode
-PRODUCT_PACKAGES += \
-    DesktopMode
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.freeform_window_management.xml
-
-$(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
@@ -221,10 +206,7 @@ PRODUCT_COPY_FILES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-    AndroidVividTheme \
-    AndroidSnowPaintDropTheme \
-    AndroidEspressoTheme
+    AndroidBlackThemeOverlay
 
 # RRO overlays
 PRODUCT_PACKAGES += \
