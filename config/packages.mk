@@ -7,21 +7,9 @@ PRODUCT_PACKAGES += \
     AvatarPicker \
     ThemesStub \
     Jellyfish \
-    LogViewer \
     Gramophone \
-    GameSpace \
-    VoltageSetupWizard \
-    Seedvault \
-    Datura \
     ExactCalculator \
-    Glimpse \
-    talkback \
-    LMOFreeform \
-    LMOFreeformSidebar \
-    OmniJaws \
-    AppCompatConfig \
-    VoltageJump \
-    AppDataBackup
+    Glimpse
 
 ifeq ($(VOLTAGE_BUILD_TYPE),OFFICIAL)
     PRODUCT_PACKAGES += \
@@ -32,10 +20,6 @@ ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
     Aperture
 endif
-
-# BtHelper
-PRODUCT_PACKAGES += \
-    BtHelper
 
 # Extra tools in Voltage
 PRODUCT_PACKAGES += \
@@ -51,10 +35,3 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mke2fs \
     mkfs.exfat
-
-# VoltageOS UDFPS animations
-ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    UdfpsIcons \
-    UdfpsAnimations
-endif
