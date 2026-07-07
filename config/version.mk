@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ANDROID_VERSION := 16
-VOLTAGEVERSION := 5.11-EOL
+ANDROID_VERSION := 17
+VOLTAGEVERSION := 6.0
 
 VOLTAGE_BUILD_TYPE ?= UNOFFICIAL
 VOLTAGE_GPG_KEY :=
