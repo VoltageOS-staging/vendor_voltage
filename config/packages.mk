@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
     Datura \
     ExactCalculator \
     Glimpse \
+    OmniJaws \
     LMOFreeform \
     LMOFreeformSidebar \
     AppCompatConfig
