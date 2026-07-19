@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     LMOFreeform \
     LMOFreeformSidebar \
-    AppCompatConfig
+    AppCompatConfig \
+    AppDataBackup
 
 ifeq ($(VOLTAGE_BUILD_TYPE),OFFICIAL)
     PRODUCT_PACKAGES += \
